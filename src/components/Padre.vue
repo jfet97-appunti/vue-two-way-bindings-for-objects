@@ -6,7 +6,6 @@
         {{ formattedObj }}
       </code>
     </pre>
-    <input type="text" v-model="obj.k1">
     <button @click="randomUpdateObj">Aggiorna k2 dal padre</button>
     <Figlio :obj.sync="obj"/>
   </div>
