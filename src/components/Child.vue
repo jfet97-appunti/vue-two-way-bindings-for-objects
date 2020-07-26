@@ -79,6 +79,7 @@ export default {
           newLocalObj.k2 !== this.oldLocalObj.k2
         ) {
           // in that case, we emit the event that is going to update the original object
+          
           // this.localObj is cloned because the emitted object will be directly assigned
           // in place of the older original object
           this.$emit("update:obj", JSON.parse(JSON.stringify(newLocalObj)));
