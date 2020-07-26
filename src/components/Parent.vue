@@ -1,24 +1,24 @@
 <template>
   <div>
-    <h1>Padre</h1>
+    <h1>Parent</h1>
     <pre>
       <code>
         {{ formattedObj }}
       </code>
     </pre>
     <input type="text" v-model="obj.k1">
-    <button @click="randomUpdateObj">Aggiorna k2 dal padre</button>
-    <Figlio :obj.sync="obj"/>
+    <button @click="randomUpdateObj">Update k2 from parent</button>
+    <Child :obj.sync="obj"/>
   </div>
 </template>
 
 <script>
-import Figlio from "./Figlio";
+import Child from "./Child";
 
 export default {
-  name: "Padre",
+  name: "Parent",
   components: {
-    Figlio
+    Child
   },
   data() {
     return {
