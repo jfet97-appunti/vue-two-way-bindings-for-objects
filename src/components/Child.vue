@@ -1,18 +1,18 @@
 <template>
   <div>
-    <h1>Figlio</h1>
+    <h1>Child</h1>
     <pre>
       <code>
         {{ formattedObj }}
       </code>
     </pre>
-    <button @click="randomUpdateObj">Aggiorna k2 dal figlio</button>
+    <button @click="randomUpdateObj">Update k2 from child</button>
   </div>
 </template>
 
 <script>
 export default {
-  name: "Figlio",
+  name: "Child",
   props: {
     obj: {
       type: Object,

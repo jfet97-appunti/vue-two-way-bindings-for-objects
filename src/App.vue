@@ -1,15 +1,14 @@
 <template>
-  <Padre/>
+  <Parent/>
 </template>
 
 <script>
-import Padre from "./components/Padre";
+import Parent from "./components/Parent";
 
 export default {
   name: "App",
   components: {
-    Padre
+    Parent
   }
 };
 </script>
-
